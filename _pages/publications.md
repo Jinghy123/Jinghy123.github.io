@@ -1,16 +1,17 @@
 ---
-layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+## 3D Segmentation and Reconstruction
 
-{% include base_path %}
+- Yuwen Tan, Xiang Xiang, Yifeng Chen, Hongyi Jing, Shiyang Ye, Chaoran Xue and Hui Xu. (2023) <br>
+  [Coupling Bracket Segmentation and Tooth Surface Reconstruction on 3D Dental Models](http://jinghy123.github.io/files/MICCAI_2725.pdf) <br>
+  Published in MICCAI 2023
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+## Human Pose Estimation
+
+- Hongyi Jing, Xianjing Huang and Xinglin Guo. (2022) <br>
+  [Semi-supervised learning on Lightweight OpenPose](http://jinghy123.github.io/files/HPE.pdf) <br>
+  Accepted by [ETAI 2022](http://jinghy123.github.io/files/ETAI.pdf)
