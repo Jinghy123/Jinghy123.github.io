@@ -14,4 +14,4 @@ author_profile: true
 
 - Hongyi Jing, Xianjing Huang and Xinglin Guo. (2022) <br>
   [Semi-supervised learning on Lightweight OpenPose](http://jinghy123.github.io/files/HPE.pdf) <br>
-  Accepted by ETAI 2022
+  Accepted by [ETAI 2022](https://github.com/Jinghy123/Jinghy123.github.io/blob/master/files/ETAI.pdf)
