@@ -3,7 +3,7 @@ title: "Coupling Bracket Segmentation and Tooth Surface Reconstruction on 3D Den
 collection: publications
 category: conferences
 date: 2023-10-01
-venue: "Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2023"
+venue: "Medical Image Computing and Computer-Assisted Intervention (MICCAI)"
 conference_label: "MICCAI 2023"
 paperurl: "https://doi.org/10.1007/978-3-031-43987-2_40"
 authors:
