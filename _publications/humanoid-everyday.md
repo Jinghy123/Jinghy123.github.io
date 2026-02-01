@@ -3,8 +3,8 @@ title: "Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humano
 collection: publications
 category: conferences
 date: 2025-10-30
-venue: "arXiv preprint (* indicates equal contribution)"
-conference_label: "ArXiv Preprint"
+venue: "ICRA (* indicates equal contribution)"
+conference_label: "ICRA 2026"
 paperurl: "https://arxiv.org/abs/2510.08807"
 code: "https://github.com/ausbxuse/Humanoid-Everyday"
 website: "https://humanoideveryday.github.io/"
