@@ -14,7 +14,7 @@ I am a second-year CS master student at [University of Southern California](http
 
 Before this, I received my Bachelor's degree at [Huazhong University of Science and Technology](https://english.hust.edu.cn/), where I worked with [Prof. Xiang Xiang](https://eglxiang.github.io/). I also served as an research intern in [MINE Lab](https://sites.nd.edu/xiangliang-zhang/) led by [Prof.Xiangliang Zhang](https://engineering.nd.edu/faculty/xiangliang-zhang/) at [Notre Dame](https://cse.nd.edu/) during my senior year.
 
-I am looking for Fall 2026 PhD opportunities and open to discuss potential research collaborations. Please contact me if you're interested!
+I am open to research collaborations and industry internships. Please contact me if you're interested!
 
 
 <hr />
