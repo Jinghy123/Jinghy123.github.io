@@ -25,4 +25,13 @@ authors:
   - Di Huang
   - Yue Wang†
 thumb: "/files/thumbs/psi0.gif"
+citation: "@misc{wei2026psi0openfoundationmodel,
+      title={$\Psi_0$: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation}, 
+      author={Songlin Wei and Hongyi Jing and Boqian Li and Zhenyu Zhao and Jiageng Mao and Zhenhao Ni and Sicheng He and Jie Liu and Xiawei Liu and Kaidi Kang and Sheng Zang and Weiduo Yuan and Marco Pavone and Di Huang and Yue Wang},
+      year={2026},
+      eprint={2603.12263},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2603.12263}, 
+}"
 ---
