@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 date: 2026-03-12
 venue: "arXiv preprint (* indicates equal contribution)"
-conference_label: "ArXiv"
+conference_label: "RSS 2026"
 paperurl: "https://arxiv.org/abs/2603.12263"
 code: "https://github.com/physical-superintelligence-lab/Psi0"
 website: "https://psi-lab.ai/Psi0/"
