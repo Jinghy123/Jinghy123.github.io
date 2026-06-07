@@ -4,6 +4,9 @@ collection: publications
 category: conferences
 date: 2026-03-12
 venue: "arXiv preprint (* indicates equal contribution)"
+venue_main: "Robotics: Science and Systems (RSS), 2026."
+awards:
+  - "Best Paper Award @ 3D-LLM/VLA Workshop, CVPR 2026"
 conference_label: "RSS 2026"
 paperurl: "https://arxiv.org/abs/2603.12263"
 code: "https://github.com/physical-superintelligence-lab/Psi0"

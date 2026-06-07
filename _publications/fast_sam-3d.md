@@ -3,7 +3,7 @@ title: "Fast SAM 3D Body: Accelerating SAM 3D Body for Real-Time Full-Body Human
 collection: publications
 category: conferences
 date: 2026-03-08
-venue: "arXiv preprint (* indicates equal contribution)"
+venue: "arXiv preprint"
 conference_label: "ArXiv"
 paperurl: "https://arxiv.org/abs/2603.15603"
 code: "https://github.com/yangtiming/Fast-SAM-3D-Body"

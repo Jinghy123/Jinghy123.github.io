@@ -19,7 +19,7 @@ I am open to research collaborations and industry internships. Please contact me
 
 <hr />
 
-<h2 id="publications">Publications</h2>
+<h2 id="publications">Publications <span class="pub-note">(* denotes equal contribution · † denotes corresponding author(s))</span></h2>
 
 <!-- New style rendering if publication categories are defined -->
 {% for post in site.publications reversed %}

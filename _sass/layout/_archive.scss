@@ -163,6 +163,17 @@
   font-size: $type-size-6;
 }
 
+.pub-award {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.pub-note {
+  font-size: $type-size-7;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
 .pub + .pub {
   margin-top: 1rem;
   padding-top: .75rem;

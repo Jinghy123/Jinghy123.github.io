@@ -53,11 +53,20 @@
       {% if post.presentation_note %}
         <strong class="co-first"><i>{{ post.presentation_note }}</i></strong>
       {% endif %}
-      {% if post.venue %}
-        in {{ post.venue }}
-      {% endif %}
-      {% if post.date %}
-        , {{ post.date | date: "%Y" }}
+      {% if post.venue_main %}
+        {{ post.venue_main }}
+        {% if post.awards %}
+          {% for award in post.awards %}
+            <br><span class="pub-award">{{ award }}</span>
+          {% endfor %}
+        {% endif %}
+      {% else %}
+        {% if post.venue %}
+          {{ post.venue }}
+        {% endif %}
+        {% if post.date %}
+          , {{ post.date | date: "%Y" }}
+        {% endif %}
       {% endif %}
     </dd>
 
