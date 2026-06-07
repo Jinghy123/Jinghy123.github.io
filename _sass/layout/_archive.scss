@@ -187,7 +187,7 @@
   background: color-mix(in srgb, var(--global-bg-color) 92%, white 8%);
 }
 .github-stars svg { display: block; flex-shrink: 0; }
-.github-stars svg:first-child { width: .92em; height: .92em; opacity: .6; }
+.github-stars svg:first-child { width: .92em; height: .92em; color: var(--global-text-color); opacity: 1; }
 .github-stars svg:last-of-type { width: .82em; height: .82em; color: #e3b341; }
 .github-stars-count {
   color: color-mix(in srgb, var(--global-text-color) 88%, transparent);
