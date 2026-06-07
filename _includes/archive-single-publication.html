@@ -76,7 +76,10 @@
       <a href="{{ post.paperurl }}" target="_blank" rel="noopener" class="pub-btn-gray">Paper</a>
     {% endif %}
     {% if post.code %}
-      <a href="{{ post.code }}" target="_blank" rel="noopener" class="pub-btn-gray">Code</a>
+      {% assign repo_slug = post.code | remove: "https://github.com/" | remove: "http://github.com/" | split: "?" | first | split: "#" | first %}
+      <a href="{{ post.code }}" target="_blank" rel="noopener" class="pub-star-btn" aria-label="GitHub repository and star count" style="display:inline-flex;align-items:center;">
+        <img src="https://img.shields.io/github/stars/{{ repo_slug }}?style=social&logo=github" alt="GitHub stars" loading="lazy" style="vertical-align:middle;">
+      </a>
     {% endif %}
     {% if post.website %}
       <a href="{{ post.website }}" target="_blank" rel="noopener" class="pub-btn-gray">Website</a>
