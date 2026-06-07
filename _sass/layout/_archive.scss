@@ -159,7 +159,7 @@
 
 .pub__venue {
   margin-top: .25rem;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
   font-size: $type-size-6;
 }
 
@@ -167,6 +167,42 @@
   color: #c0392b;
   font-weight: 600;
 }
+
+/* GitHub star chip after publication titles */
+.github-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: .38em;
+  font-size: .78em;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: .5em;
+  padding: .25em .6em;
+  border: 1px solid color-mix(in srgb, var(--global-text-color-light) 18%, transparent);
+  border-radius: 2em;
+  background: color-mix(in srgb, var(--global-bg-color) 92%, white 8%);
+}
+.github-stars svg { display: block; flex-shrink: 0; }
+.github-stars svg:first-child { width: .92em; height: .92em; opacity: .6; }
+.github-stars svg:last-of-type { width: .82em; height: .82em; color: #e3b341; }
+.github-stars-count {
+  color: color-mix(in srgb, var(--global-text-color) 88%, transparent);
+  font-size: .86em;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .01em;
+  font-variant-numeric: tabular-nums;
+}
+.github-stars:hover {
+  color: var(--global-text-color);
+  border-color: color-mix(in srgb, var(--global-text-color) 22%, transparent);
+  background: color-mix(in srgb, var(--global-bg-color) 84%, white 16%);
+}
+.github-stars.is-pending { display: none; }
 
 .pub-note {
   font-size: $type-size-7;

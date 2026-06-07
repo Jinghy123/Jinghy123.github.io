@@ -13,4 +13,61 @@
 <link rel="shortcut icon" href="{{ base_path }}/images/favicon.png"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- GitHub star counts for publication chips -->
+<script>
+  if (!window.__githubStarsInit) {
+    window.__githubStarsInit = true;
+
+    const repoPathFromUrl = (url) => {
+      const match = url?.match(/github\.com\/([^/?#]+\/[^/?#]+)/i);
+      return match?.[1] ?? null;
+    };
+
+    const formatStars = (n) => {
+      if (n >= 1000) {
+        const short = (n / 1000).toFixed(n >= 10000 ? 0 : 1);
+        return `${short.replace(/\.0$/, "")}k`;
+      }
+      return String(n);
+    };
+
+    const loadGitHubStars = () => {
+      const nodes = [...document.querySelectorAll("[data-github-stars]")];
+      const groups = new Map();
+
+      for (const node of nodes) {
+        const repo = repoPathFromUrl(node.getAttribute("data-github-repo"));
+        if (!repo) continue;
+        if (!groups.has(repo)) groups.set(repo, []);
+        groups.get(repo).push(node);
+      }
+
+      for (const [repo, repoNodes] of groups) {
+        fetch(`https://api.github.com/repos/${repo}`, {
+          headers: { Accept: "application/vnd.github.v3+json" }
+        })
+          .then((res) => (res.ok ? res.json() : null))
+          .then((data) => {
+            const stars = data?.stargazers_count;
+            if (typeof stars !== "number") return;
+
+            for (const node of repoNodes) {
+              const count = node.querySelector("[data-github-stars-count]");
+              if (count) count.textContent = formatStars(stars);
+              node.setAttribute("aria-label", `${stars} GitHub stars`);
+              node.classList.remove("is-pending");
+            }
+          })
+          .catch(() => {});
+      }
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", loadGitHubStars, { once: true });
+    } else {
+      loadGitHubStars();
+    }
+  }
+</script>
+
 <!-- end custom head snippets -->
