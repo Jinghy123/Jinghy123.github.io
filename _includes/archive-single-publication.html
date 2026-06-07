@@ -33,6 +33,12 @@
       <a href="{{ href }}"{% if href contains 'http' %} target="_blank" rel="noopener"{% endif %}>
         <strong>{{ title }}</strong>
       </a>
+      {% if post.code %}
+        {% assign repo_slug = post.code | remove: "https://github.com/" | remove: "http://github.com/" | split: "?" | first | split: "#" | first %}
+        <a href="{{ post.code }}" target="_blank" rel="noopener" aria-label="GitHub stars" style="white-space:nowrap;">
+          <img src="https://img.shields.io/github/stars/{{ repo_slug }}?style=flat&logo=github&label=%E2%98%85" alt="GitHub stars" loading="lazy" style="vertical-align:middle;margin-left:.35rem;">
+        </a>
+      {% endif %}
     </dd>
 
     {% if post.authors %}
@@ -76,10 +82,7 @@
       <a href="{{ post.paperurl }}" target="_blank" rel="noopener" class="pub-btn-gray">Paper</a>
     {% endif %}
     {% if post.code %}
-      {% assign repo_slug = post.code | remove: "https://github.com/" | remove: "http://github.com/" | split: "?" | first | split: "#" | first %}
-      <a href="{{ post.code }}" target="_blank" rel="noopener" class="pub-star-btn" aria-label="GitHub repository and star count" style="display:inline-flex;align-items:center;">
-        <img src="https://img.shields.io/github/stars/{{ repo_slug }}?style=social&logo=github" alt="GitHub stars" loading="lazy" style="vertical-align:middle;">
-      </a>
+      <a href="{{ post.code }}" target="_blank" rel="noopener" class="pub-btn-gray">Code</a>
     {% endif %}
     {% if post.website %}
       <a href="{{ post.website }}" target="_blank" rel="noopener" class="pub-btn-gray">Website</a>
