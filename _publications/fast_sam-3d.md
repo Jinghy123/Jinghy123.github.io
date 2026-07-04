@@ -4,7 +4,8 @@ collection: publications
 category: conferences
 date: 2026-03-08
 venue: "arXiv preprint"
-conference_label: "ArXiv"
+venue_main: "European Conference on Computer Vision (ECCV), 2026."
+conference_label: "ECCV 2026"
 paperurl: "https://arxiv.org/abs/2603.15603"
 code: "https://github.com/yangtiming/Fast-SAM-3D-Body"
 website: "https://yangtiming.github.io/Fast-SAM-3D-Body-Page/"
