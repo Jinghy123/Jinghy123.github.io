@@ -3,8 +3,8 @@ title: "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loc
 collection: publications
 category: conferences
 date: 2026-06-08
-venue: "arXiv preprint (* indicates equal contribution)"
-conference_label: "ArXiv"
+venue: "Conference on Robot Learning (CoRL)"
+conference_label: "CoRL 2026"
 paperurl: "https://arxiv.org/abs/2606.08278"
 code: "https://github.com/physical-superintelligence-lab/SIMPLE"
 website: "https://psi-lab.ai/SIMPLE/"
