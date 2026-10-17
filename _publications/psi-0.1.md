@@ -23,5 +23,5 @@ authors:
   - Wenping Wang
   - Di Huang
   - Yue Wang
-thumb: "/files/thumbs/psi01.gif"
+thumb: "/files/thumbs/psi01.gif?v=3e7376ae"
 ---
